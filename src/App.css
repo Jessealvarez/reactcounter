@@ -13,16 +13,47 @@
 }
 
 .top-bar {
-  background-color: red;
-  display: flex;
-  flex-direction: row;
+  background-color: darkred;
   height: 50px;
   width: 100%;
   border-radius: 10px;
 }
+.menu-text {
+  display: flex;
+  flex-direction: row;
+}
 
 #logo {
+  margin: 0;
+  margin-left: 2%;
 }
+
+#menu {
+  margin: 0;
+  margin-left: 68%;
+}
+div.count {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+#minus {
+  height: 50px;
+  width: 50px;
+
+  border: none;
+  color: black;
+  border-radius: 12px;
+}
+#plus {
+  height: 50px;
+  width: 50px;
+  background-color: blue;
+  border: none;
+  color: white;
+  border-radius: 12px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

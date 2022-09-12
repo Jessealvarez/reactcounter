@@ -18,12 +18,21 @@ const Counter = () => {
   return (
     <div className="container">
       <div className="top-bar">
-        <h1 id="logo">Logo</h1>
-        <h1 id="menu">Menu</h1>
+        <div className="menu-text">
+          <h1 id="logo">Logo</h1>
+          <h1 id="menu">Menu</h1>
+        </div>
       </div>
-      <button onClick={minus}> - </button>
-      <h1>{count}</h1>
-      <button onClick={plus}> + </button>
+      <div className="count">
+        <button id="minus" onClick={minus}>
+          {" "}
+          -{" "}
+        </button>
+        <button id="plus" onClick={plus}>
+          +
+        </button>
+      </div>
+      <h1>{count}</h1>{" "}
     </div>
   );
 };
