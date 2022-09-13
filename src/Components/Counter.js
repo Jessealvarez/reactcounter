@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import StarCounter from "./StarCounter";
 
 const Counter = () => {
   const [count, setCount] = useState(0);
@@ -15,6 +16,7 @@ const Counter = () => {
       setCount(count + 1);
     }
   };
+
   return (
     <div className="container">
       <div className="top-bar">
@@ -32,7 +34,8 @@ const Counter = () => {
           +
         </button>
       </div>
-      <h1>{count}</h1>{" "}
+      <h1>{count}</h1>
+      <StarCounter count={count} />
     </div>
   );
 };
